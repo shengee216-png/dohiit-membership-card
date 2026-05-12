@@ -1,0 +1,98 @@
+body{
+  background:#111;
+  font-family:Arial;
+  color:white;
+}
+
+.container{
+  display:flex;
+  gap:40px;
+  padding:40px;
+}
+
+.form-section{
+  width:300px;
+}
+
+input{
+  width:100%;
+  padding:12px;
+  margin-bottom:15px;
+  border:none;
+  border-radius:8px;
+}
+
+button{
+  width:100%;
+  padding:12px;
+  margin-bottom:10px;
+  background:red;
+  color:white;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+#card{
+  position: relative;
+  width: 900px;     /* FIXED WIDTH */
+  height: auto;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 900px;
+  height: auto;
+  z-index: 0;
+}
+#card-wrapper {
+  width: 900px;
+  position: relative;
+}
+
+#card {
+  position: relative;
+  width: 900px;
+  height: 600px; /* IMPORTANT: give fixed height */
+  overflow: hidden;
+}
+
+.member-name{
+  position:absolute;
+  top:316px;
+  left:70px;
+  font-size:26px;
+  font-weight:bold;
+}
+
+.member-id{
+  position:absolute;
+  top:400px;
+  left:70px;
+  font-size:22px;
+  color:red;
+}
+
+.membership-type{
+  position:absolute;
+  top:400px;
+  left:298px;
+  font-size:22px;
+  color:red;
+}
+
+.valid-from{
+  position:absolute;
+  top:486px;
+  left:70px;
+  font-size:18px;
+}
+
+.valid-thru{
+  position:absolute;
+  top:486px;
+  left:296px;
+  font-size:18px;
+}
