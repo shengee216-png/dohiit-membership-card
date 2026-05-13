@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dohiit Membership Card Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<div class="card-section">
+  <!-- CARD PREVIEW -->
+</div>
+
+<div class="form-section">
+  <!-- FORM -->
+</div>    <div class="form-container">
+    <h1>Dohiit Membership Card</h1>
+    
+
+<label>Member Name</label>
+    <input type="text" id="memberName" placeholder="Member Name">
+    <div>
+  <label>Member ID</label>
+  <div style="display:flex; align-items:center; gap:10px;">
+    
+    <span style="padding:8px; background:#0c0c0c; border:1px solid #bd0404;">
+      DH100
+    </span>
+
+    <input
+      id="memberId"
+      type="number"
+      placeholder="Enter numbers only"
+      style="padding:8px; border:1px solid #ccc;"
+    />
+  </div>
+</div>
+    <label>Membership Type</label>
+<select id="membershipType">
+
+  <option value="Basic Monthly">Monthly</option>
+
+  <option value="3 Months">3 Months</option>
+
+  <option value="6 Months">6 Months</option>
+
+  <option value="Annual">Annual</option>
+
+  <option value="Day Pass">Day Pass</option>
+
+  <option value="Student Monthly">Student Monthly</option>
+
+  <option value="Couple Monthly">Couple Monthly</option>
+
+  <option value="Couple 3 Months">Couple 3 Months</option>
+
+  <option value="Couple 6 Months">Couple 6 Months</option>
+
+  <option value="Couple Annual">Couple Annual</option>
+
+</select>
+    
+    <label>Valid From</label>
+<input type="date" id="validFrom" />
+
+<label>Valid Thru</label>
+<input type="date" id="validThru" />
+
+<h3>Select Gender Template</h3>
+
+
+<div class="gender-box">
+  <select id="templateSelect">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+  </select>
+</div>
+
+
+    <button onclick="generateCard()">Generate Card</button>
+    <button onclick="downloadCard()">Download</button>
+  </div>
+
+  <div class="card-section">
+
+  <div id="card">
+
+    <img id="cardBg" src="./male.jpg" class="bg">
+
+    <div class="member-name" id="nameText">RAHUL SHARMA</div>
+    <div class="member-id" id="idText">DH1002456</div>
+    <div class="membership-type" id="typeText">PREMIUM</div>
+    <div class="valid-from" id="fromText">20 MAY 2024</div>
+    <div class="valid-thru" id="thruText">19 MAY 2025</div>
+
+  </div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
